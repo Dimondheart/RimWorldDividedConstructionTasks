@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+	  <xpath>*/WorkGiverDef[defName = "FixBrokenDownBuilding"]/workType</xpath>
+	  <value>
+		<workType>Maintenance</workType>
+	  </value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+	  <xpath>*/WorkGiverDef[defName = "Repair"]/workType</xpath>
+	  <value>
+		<workType>Maintenance</workType>
+	  </value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+	  <xpath>*/WorkGiverDef[defName = "BuildRoofs"]/workType</xpath>
+	  <value>
+		<workType>Maintenance</workType>
+	  </value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+	  <xpath>*/WorkGiverDef[defName = "RemoveRoofs"]/workType</xpath>
+	  <value>
+		<workType>Maintenance</workType>
+	  </value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+	  <xpath>*/WorkGiverDef[defName = "RearmTraps"]/workType</xpath>
+	  <value>
+		<workType>Maintenance</workType>
+	  </value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+	  <xpath>*/WorkGiverDef[defName = "RearmTraps"]/priorityInType</xpath>
+	  <value>
+		<priorityInType>40</priorityInType>
+	  </value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+	  <xpath>*/WorkGiverDef[defName = "Deconstruct"]/workType</xpath>
+	  <value>
+		<workType>Demolition</workType>
+	  </value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+	  <xpath>*/WorkGiverDef[defName = "Uninstall"]/workType</xpath>
+	  <value>
+		<workType>Demolition</workType>
+	  </value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+	  <xpath>*/WorkGiverDef[defName = "ConstructRemoveFloors"]/workType</xpath>
+	  <value>
+		<workType>Demolition</workType>
+	  </value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+	  <xpath>*/WorkGiverDef[defName = "ConstructSmoothFloors"]/workType</xpath>
+	  <value>
+		<workType>Demolition</workType>
+	  </value>
+	</Operation>
+	<Operation Class="PatchOperationSequence">
+	  <success>Always</success>
+	  <operations>
+	    <li Class="PatchOperationTest">
+	      <xpath>*/WorkGiverDef[defName = "FluffyBreakdowns_Maintenance"]/workType</xpath>
+	      <success>Always</success>
+	    </li>
+	    <li Class="PatchOperationReplace">
+	      <xpath>*/WorkGiverDef[defName = "FluffyBreakdowns_Maintenance"]/workType</xpath>
+	      <value>
+	        <workType>Maintenance</workType>
+	      </value>
+	    </li>
+	    <li Class="PatchOperationReplace">
+	      <xpath>*/WorkGiverDef[defName = "FluffyBreakdowns_Maintenance"]/priorityInType</xpath>
+	      <value>
+	        <priorityInType>75</priorityInType>
+	      </value>
+	    </li>
+	  </operations>
+	</Operation>
+</Patch>

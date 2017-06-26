@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<WorkTypeDefs>
+
+  <WorkTypeDef>
+    <defName>Maintenance</defName>
+    <labelShort>Maintain</labelShort>
+    <pawnLabel>Maintainor</pawnLabel>
+    <gerundLabel>Maintaining</gerundLabel>
+    <description>Maintain the infrastructure of the colony and build/remove roofs.</description>
+    <verb>Maintain</verb>
+    <naturalPriority>910</naturalPriority>
+    <requireCapableColonist>true</requireCapableColonist>
+    <relevantSkills>
+      <li>Construction</li>
+    </relevantSkills>
+  </WorkTypeDef>
+
+  <WorkTypeDef>
+    <defName>Demolition</defName>
+    <labelShort>Demolish</labelShort>
+    <pawnLabel>Demolitionist</pawnLabel>
+    <gerundLabel>Demolishing</gerundLabel>
+    <description>Deconstruct things and relocate furniture.</description>
+    <verb>Demolish</verb>
+    <naturalPriority>890</naturalPriority>
+    <requireCapableColonist>true</requireCapableColonist>
+    <relevantSkills>
+      <li>Construction</li>
+    </relevantSkills>
+  </WorkTypeDef>
+  
+</WorkTypeDefs>

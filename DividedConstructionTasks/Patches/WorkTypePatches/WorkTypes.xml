@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationReplace">
+	  <xpath>*/WorkTypeDef[defName = "Construction"]/description</xpath>
+	  <value>
+		<description>Build things that you've designated.</description>
+	  </value>
+	</Operation>
+</Patch>
