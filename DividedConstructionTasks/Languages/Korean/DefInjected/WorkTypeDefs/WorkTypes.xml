@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+    <Maintenance.labelShort>유지</Maintenance.labelShort>
+    <Maintenance.pawnLabel>유지자</Maintenance.pawnLabel>
+    <Maintenance.gerundLabel>유지</Maintenance.gerundLabel>
+    <Maintenance.description>Maintain the infrastructure of the colony and build/remove roofs.</Maintenance.description>
+    <Maintenance.verb>유지</Maintenance.verb>
+
+    <Demolition.labelShort>해체</Demolition.labelShort>
+    <Demolition.pawnLabel>해체자</Demolition.pawnLabel>
+    <Demolition.gerundLabel>해체</Demolition.gerundLabel>
+    <Demolition.description>Deconstruct things and relocate furniture.</Demolition.description>
+    <Demolition.verb>해체</Demolition.verb>
+
+</LanguageData>
